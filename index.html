@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WXYC Playlist Tool</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main role="tabs">
+      <h1>WXYC Playlist</h1>
+      <nav role="tablist" aria-label>
+        <button id="now-playing" role="tab" aria-selected="true" aria-controls="playlist-section">NOW PLAYING</button>
+        <button id="saved-tracks" role="tab" aria-selected="false" aria-controls="saved-section">SAVED TRACKS</button>
+      </nav>
+      <section id="playlist-section" class="" role="tabpanel" aria-labelledby="now-playing">
+        <h2>NOW PLAYING</h2>
+        <div id="playlist"></div>
+      </section>
+      <section id="saved-section" class="hidden" role="tabpanel" aria-labelledby="saved-tracks">
+        <h2>SAVED TRACKS</h2>
+        <div id="saved"></div>
+      </section>
+    </main>
+    <div class="background"></div>
+  </body>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="app.js"></script>
+  <script src="tabs.js"></script>
+</html>

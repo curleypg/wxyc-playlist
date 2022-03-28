@@ -1,0 +1,139 @@
+html {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+main {
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+main > * {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+[aria-selected="true"] {
+  font-weight: 700;
+}
+
+.table {
+  border-spacing: 2px;
+  display: table;
+  font-size: 1.4rem;
+}
+
+.row {
+  display: table-row;
+}
+
+.row > * {
+  background: #F3F3F3;
+  display: table-cell;
+  padding: 5px;
+}
+
+.row.head {
+  font-weight: 700;
+}
+
+.row.head > * {
+  background: #AAAAAA;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.row.breakpoint > * {
+  background: #444444;
+  color: #00FF00;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row.talkset > * {
+  background: #444444;
+  color: #DDDD22;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rotation, .request {
+  text-align: center;
+  width: 5%;
+}
+
+.save input {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background: #000000;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(hsl(336, 59%, 76%) 0%, hsl(352, 66%, 73%) 15%, hsl(319, 44%, 66%) 40%, hsl(235, 31%, 64%) 100%);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  main {
+    width: 500px;
+  }
+
+  .table {
+    display: block;
+  }
+
+  .row {
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .row.head {
+    display: none;
+  }
+
+  .row > * {
+    background: none;
+    display: block;
+  }
+
+  .release, .label, .rotation, .request {
+    display: none
+  }
+}
